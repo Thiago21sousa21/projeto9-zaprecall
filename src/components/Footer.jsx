@@ -3,8 +3,8 @@ import styled from 'styled-components';
 export default function Footer(props){
   const {data, cont}=props;
   return(
-    <CsFooter>
-      {cont} / {data.length} CONCLUÍDOS
+    <CsFooter data-test="footer">
+      {cont}/{data.length} CONCLUÍDOS
     </CsFooter>
   );
 }

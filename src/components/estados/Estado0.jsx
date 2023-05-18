@@ -2,12 +2,13 @@ import styled from 'styled-components';
 
 export default function Estado0(props){
 
-    const {indice, setAltura, setEstado, verificaRetorna} = props;
+    const {indice, setAltura, setEstado, verificaRetorna, setBackground } = props;
 
     function virarCarta(){
         setAltura(130);
         setEstado(1);
         verificaRetorna();
+        setBackground('#FFFFD5;');
     }
 
     return(

@@ -6,7 +6,7 @@ import quase from "./../../assets/icone_quase.png";
 
 export default function Estado2(props){
     const {data, indice, setEstado, setAltura, setIcon, setCor, setManipulado} = props
-    let {setCont, cont} = props;
+    let {setCont, cont, setBackground} = props;
    function setaPro3(icon, cor, tipoTest){
     setEstado(3);
     setAltura(65);
@@ -15,6 +15,7 @@ export default function Estado2(props){
     cont++;
     setCont(cont);
     setManipulado(tipoTest);
+    setBackground('#ffffff;')
    }
 
     return(
