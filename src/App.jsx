@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useState } from 'react';
 import Header from './components/Header';
 import Main from './components/Main';
 import Footer from './components/Footer';
@@ -7,7 +7,7 @@ import styled from 'styled-components';
 import data from './data';
 
 export default function App() {
-  let [cont, setCont ] = useState(0);
+  const [cont, setCont ] = useState(0);
   const [arrIcon, setArrIcon ] = useState([]);
 
   return (
@@ -17,7 +17,7 @@ export default function App() {
         <Footer arrIcon={arrIcon}  data={data} cont={cont}/>
         <Welcome />
     </CsApp>
-  )
+  );
 }
 
 const CsApp = styled.div`
