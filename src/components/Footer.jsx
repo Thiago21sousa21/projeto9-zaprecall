@@ -20,7 +20,7 @@ if( cont === 8 && arrIcon.includes(3) ){
           </div>
           <p>Ainda faltam alguns... </p><p> Mas não desanime!</p>
           <div className='result'>{cont}/{data.length} CONCLUÍDOS</div>
-          <div>{arrIcon.map((elemento, index) => <img key ={index} src= {elemento === 1 ? certo : elemento === 2 ? quase : erro }/>)}</div>
+          <div>{arrIcon.map((elemento, index) => <img data-test={elemento === 1 ? 'zap-icon' : elemento === 2 ? 'partial-icon' : 'no-icon' }  key ={index} src= {elemento === 1 ? certo : elemento === 2 ? quase : erro }/>)}</div>
           
         </CsFooter1>
   )
@@ -32,7 +32,7 @@ if( cont === 8 && arrIcon.includes(3) ){
             </div>
             <p>Você não esqueceu de </p><p>  nenhum flashcard!</p>
             <div className='result'>{cont}/{data.length} CONCLUÍDOS</div>
-            <div>{arrIcon.map((elemento, index) => <img key ={index} src= {elemento === 1 ? certo : elemento === 2 ? quase : erro }/>)}</div>
+            <div>{arrIcon.map((elemento, index) => <img data-test={elemento === 1 ? 'zap-icon' : elemento === 2 ? 'partial-icon' : 'no-icon' }  key ={index} src= {elemento === 1 ? certo : elemento === 2 ? quase : erro }/>)}</div>
           </CsFooter2>
   )
 } else{
@@ -40,7 +40,7 @@ if( cont === 8 && arrIcon.includes(3) ){
         <CsFooter data-test="footer" >
     
             <div className='result'>{cont}/{data.length} CONCLUÍDOS</div>
-            <div>{arrIcon.map((elemento, index) => <img key ={index} src= {elemento === 1 ? certo : elemento === 2 ? quase : erro }/>)}</div>
+            <div>{arrIcon.map((elemento, index) => <img data-test={elemento === 1 ? 'zap-icon' : elemento === 2 ? 'partial-icon' : 'no-icon' } key ={index} src= {elemento === 1 ? certo : elemento === 2 ? quase : erro }/>)}</div>
       
         </CsFooter>
   )
